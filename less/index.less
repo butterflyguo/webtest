@@ -1,0 +1,152 @@
+@import 'base.less';
+#header{
+    height: .44rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: .1rem;
+    .left{
+        width: .4rem;
+    }
+    .center{
+        flex: 1;
+        color:#666;
+        font-size: .2rem;
+    }
+    .right{
+        width: .4rem;
+    }
+    a{
+        color:#d3079e;
+        font-size: .14rem;
+        i{
+            font-size: .14rem;
+        }
+    }
+}
+.mui-scroll-wrapper{
+    flex: 1;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    .mui-scroll{
+        #main {
+            height: 100%;
+            .banner{
+                img{
+                    width: 100%;
+                }
+             
+            }
+            .nav {
+                padding: .05rem;
+                .mui-col-xs-4{
+                    
+                    img{
+                        width: 100%;
+                    }
+                    padding-right: .05rem;
+                }
+              
+            }
+            .block{
+                border-top: 1px solid #ccc;
+                img{
+                    width: 100%;
+                }
+                .mui-col-xs-3 {
+                    border-left: 1px solid #ccc;
+                    border-bottom: 1px solid #ccc;
+                   
+                }
+            }
+            .baby{
+                display: flex;
+                border-bottom: 1px solid #ccc;
+                height: 1.4rem;
+                .left,.right{
+                    width: 50%;
+        
+                    a{
+                        display: block;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+                .right {
+                    border-left: 1px solid #ccc;
+                }
+        
+            }
+            .hot {
+                a{
+                    display: block;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            .weekend {
+                .title{
+                    height: .4rem;
+                    display: flex;
+                    a {
+                        display: block;
+                        width: 100%;
+                        text-align: center;
+                        line-height: .4rem;
+                        &:hover{
+                            color:#d3079e;
+                            border-bottom: 2px solid #d3079e;
+                        }
+                    }
+                }
+                .content {
+                    .mui-card-header.mui-card-media{
+                       &::after{
+                           background-color: transparent;
+                       }
+                    }
+                    .mui-card-header>img:first-child{
+                        width: 100%;
+                        height: 1rem;
+                    }
+                }
+                
+            }
+        }
+    }
+    
+}
+#footer {
+    width: 100vw;
+    height: .44rem;
+
+
+    .mui-card {
+        background-color: #d3079e;
+        margin: 0;
+
+
+        .mui-card-header {
+            .left {
+                a {
+                    color: #fff;
+
+
+                    &:first-child {
+                        margin-right: 0.1rem;
+                    }
+                }
+            }
+
+
+            .right {
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
